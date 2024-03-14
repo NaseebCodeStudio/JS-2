@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="NCS.png" type="image/x-icon">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        background: #e3edf7;
+      }
+      .icon {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+        background-image: url(NCS.png);
+        background-position: center;
+        background-size: cover;
+      }
+      .drop {
+        margin: 50px auto;
+        max-width: 600px;
+      }
+      .drop li {
+        list-style: none;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        background: #e3edf7;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+          -6px -6px 10px -1px rgb(255, 255, 255, 0.7);
+      }
+      .drop li label {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      label::before {
+        content: "+";
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: bolder;
+      }
+      input[type="radio"] {
+        display: none;
+      }
+      .drop .content {
+        text-align: justify;
+        color: #555;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+      }
+      .drop input[type="radio"]:checked + label + .content {
+        max-height: 400px;
+        padding: 10px 10px 20px;
+        overflow: auto;
+      }
+      .drop input[type="radio"]:checked + label::before {
+        content: "-";
+      }
+      @media (max-width: 360px) {
+        .drop {
+        margin: 50px auto;
+        max-width: 360px;
+      }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- icon right  -->
+    <a href="https://www.youtube.com/@NaseebCodeStudio" target="_blank"
+      ><div class="icon"></div
+    ></a>
+    <!-- ==================first drop================== -->
+    <ul class="drop">
+      <li>
+        <input type="radio" name="drop" id="first" />
+        <label for="first">Developers / Comments</label>
+        <div class="content">
+          <p>
+            <!-- --p-- -->
+            - As you learn <b>JavaScript,</b> you can work as a front-end,
+            back-end, or full-stack developer, who knows both front-end and
+            back-end development. <br />
+            - <b>Comments</b> are a part of the JavaScript language used to make
+            code unexecutable and provide details about the statements in a
+            program. <br />
+            <b>There are Two types of Comments:</b> <br />
+            <b>1.</b> Single line comment represented by "//" <br />
+            <b>2.</b> Multi line comment represented by "/* */" <br />
+            <!-- --p --  -->
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- ==================second drop================== -->
+    <ul class="drop">
+      <li>
+        <input type="radio" name="drop" id="second" />
+        <label for="second" style="text-transform: capitalize"
+          >Seperation of Concerns</label
+        >
+        <div class="content">
+          <p>
+            <!-- -- p --  -->
+            Separation of Concerns in JavaScript means <b>organizing</b> your
+            code so that <b>different parts</b> of your program are
+            <b>responsible for different tasks.</b> It's like dividing a big
+            task into smaller, more manageable pieces, each handling its own
+            specific job. This approach helps keep your code organized, easier
+            to understand, and simpler to maintain. <b>For example,</b> you
+            might have one part of your code that handles user interface
+            interactions, another part that deals with data processing, and
+            another part that manages communication with a server. Each part
+            focuses on its own job without getting mixed up with other parts,
+            making it easier to <b>develop and maintain</b> your JavaScript
+            application. <br />
+            Use an <b>external file</b> with a .js extension and link it with
+            HTML using the script element.
+            <!-- -- p --  -->
+          </p>
+        </div>
+      </li>
+    </ul>
+    <!-- ==================third drop================== -->
+    <ul class="drop">
+      <li>
+        <input type="radio" name="drop" id="third" />
+        <label for="third">Variables</label>
+        <div class="content">
+          <p>
+            <!-- --p-- -->
+            - We use a Variable to <b>store data</b> temporarily. <br />
+            - <b>Variables</b> are a type of container used to store data in
+            memory and give a name to that location. When we need to access that
+            data, we can refer to it by its name. <br />
+            - <b>A variable</b> is a named container for storing data in a
+            computer's memory. It acts as a placeholder to hold values that can
+            be used and manipulated in a program.
+            <b>In programming, variables</b> allow us to store and retrieve data
+            dynamically, enabling us to perform operations and calculations on
+            that data. Each variable has a unique name and can hold different
+            types of values, such as numbers, strings, arrays, objects, and
+            more. <b>Variables</b> are fundamental to programming and are used
+            extensively in writing code to create dynamic and interactive
+            applications. <br />
+            <!-- --p-- -->
+          </p>
+        </div>
+      </li>
+    </ul>
+    <!-- ==================third drop================== -->
+    <ul class="drop">
+      <li>
+        <input type="radio" name="drop" id="six" />
+        <label for="six">Create a Variable</label>
+        <div class="content">
+          <p>
+            <b>How to create a variable?</b> <br />
+            <!-- --p-- -->
+            <b>1.</b> Select a keyword for creating a variable; choose one of
+            the keywords from 'let,' 'var,' or 'const'. <br />
+            <b>2.</b> Give a name to that container, which is declared or
+            created using above keyword, following the rules: <br />
+            - Do not use <b>reserved</b> words as a name of keyword Ex: let,
+            const etc. <br />
+            - Do not use <b>numbers</b> at the starting of a variable name.
+            <br />
+            - Do not use use <b>spaces</b> in a variable name. <br />
+            - Do not use <b>special symbols</b> in a variable name exept
+            underscore. <br />
+            - Variable Names must be <b>meaningful</b>. <br />
+            <b>3.</b> Assign data to that container using the assignment
+            operator. <br />
+            <b>4.</b> Terminate the line with a semicolon. <br />
+            <b>Example: </b> 
+            <br><span style="color: red;">let email1 = "NaseebKhan.Contact.me@gmail.com";</span>
+            <br><span style="color: red;">var num_one = 12;</span>
+            <br><span style="color: red;">const passwordOne = "qwertN90878//";</span>
+            <br> <span style="color: blue; display: block; text-align: center; text-transform: capitalize;">variable names are case sensitive.</span>
+            <!-- --p-- -->
+          </p>
+        </div>
+      </li>
+    </ul>
+    <!-- ==================third drop================== -->
+    <ul class="drop">
+      <li>
+        <input type="radio" name="drop" id="sixt" />
+        <label for="sixt">Declaration & Assignment</label>
+        <div class="content">
+          <p>
+            
+            <!-- --p-- -->
+            <b>In JavaScript, "declaration" and "assignment" are important concepts related to variables.</b> <br>
+            - <b>Declaration:</b> This is when you introduce a new variable to JavaScript. You declare a variable by using one of the keywords like let, var, or const, followed by the variable name. <br>
+            <b>Example:</b> <br>
+            <span style="color: red;">let age; // Declaring a variable named 'age'</span> <br>
+            In this example, we've declared a variable named 'age' using the let keyword. <br>
+            - <b>Assignment:</b> This is when you give a value to a declared variable. You assign a value to a variable using the assignment operator (=).<br>
+            <b>Example:</b> <br>
+            <span style="color: red;">let age; // Declaring a variable named 'age' <br>
+              age = 25; // Assigning the value 25 to the variable 'age' <br>
+              </span> <br>
+              In this example, we first declared the variable 'age', and then we assigned the value 25 to it.
+              <hr>
+              <span style="color: blue; display: block; text-align: center;">In simple terms, declaration is like telling JavaScript that you're going to use a particular variable, and assignment is when you actually give that variable a value.</span>
+            <!-- --p-- -->
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- ==================fifth drop================== -->
+    <ul class="drop">
+      <li>
+        <input type="radio" name="drop" id="fifth" />
+        <label for="fifth">Confirm / Prompt</label>
+        <div class="content">
+          <!-- -- p -- -->
+          <p>
+            <b>1.</b> Prompt: The prompt() method displays a dialog box that
+            prompts the user for input. <br />
+            <span style="color: red"
+              >var name = prompt("Enter your name:"); <br />
+              console.log("Hello, " + name);
+            </span>
+            <br />
+
+            <b>2.</b> Confirm: The confirm() method displays a dialog box with a
+            message and OK and Cancel buttons. <br />
+            <span style="color: red"
+              >var result = confirm("Are you sure you want to proceed?"); <br />
+              console.log("User confirmed: " + result);
+            </span>
+            <br />
+
+            <!-- --p--  -->
+          </p>
+        </div>
+      </li>
+    </ul>
+    <br><br><br><br>
+  </body>
+</html>
